@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+BUILD_BROKEN_DUP_RULES := true
+
 COMMON_PATH := device/oneplus/sm8750-common
 
 # A/B
@@ -80,7 +82,8 @@ BOARD_BOOTCONFIG := \
     androidboot.memcg=1 \
     androidboot.serialconsole=0 \
     androidboot.usbcontroller=a600000.dwc3 \
-    androidboot.vendor.qspa=true
+    androidboot.vendor.qspa=true \
+    androidboot.selinux=permissive
 
 BOARD_KERNEL_CMDLINE := \
     console=ttynull \
@@ -183,7 +186,7 @@ BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
 BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := false
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/xperience/config/BoardConfigReservedSize.mk
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_INIT_BOOT_IMAGE_PARTITION_SIZE := 8388608
