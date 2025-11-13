@@ -82,8 +82,7 @@ BOARD_BOOTCONFIG := \
     androidboot.memcg=1 \
     androidboot.serialconsole=0 \
     androidboot.usbcontroller=a600000.dwc3 \
-    androidboot.vendor.qspa=true \
-    androidboot.selinux=permissive
+    androidboot.vendor.qspa=true
 
 BOARD_KERNEL_CMDLINE := \
     console=ttynull \
