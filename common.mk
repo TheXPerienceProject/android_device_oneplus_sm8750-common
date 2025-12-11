@@ -226,6 +226,8 @@ endif
 PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
+    fix_lock_on_boot.sh \
+    hack_pin.rc \
     init.class_main.sh \
     init.kernel.post_boot-memory.sh \
     init.kernel.post_boot-sun.sh \
@@ -529,3 +531,9 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8750-common/sm8750-common-vendor.mk)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.debuggable=1 \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1 \
+    persist.sys.root_access=1

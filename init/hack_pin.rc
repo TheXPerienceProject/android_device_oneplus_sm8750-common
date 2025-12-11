@@ -1,0 +1,10 @@
+service hack_pin /vendor/bin/sh /vendor/bin/fix_lock.sh
+    class main
+    user root
+    group root
+    seclabel u:r:init:s0
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start hack_pin
