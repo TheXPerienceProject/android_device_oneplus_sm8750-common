@@ -92,6 +92,10 @@ BOARD_KERNEL_CMDLINE := \
     qcom_geni_serial.con_enabled=0 \
     sysctl.kernel.firmware_config.force_sysfs_fallback=1
 
+TARGET_KERNEL_CLANG_VERSION := 22
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_LLVM_BINUTILS := true
+TARGET_KERNEL_NO_GCC := false
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -226,7 +230,7 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-include hardware/oplus/sepolicy/qti/SEPolicy.mk
+include hardware/oplus/sepolicy/dodge/SEPolicy.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
