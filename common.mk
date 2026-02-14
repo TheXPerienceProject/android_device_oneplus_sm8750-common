@@ -318,8 +318,8 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.performance-service
 
 # Overlays
-$(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
-$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
+$(call inherit-product, hardware/oplus_dodge/overlay/generic/generic.mk)
+$(call inherit-product, hardware/oplus_dodge/overlay/qssi/qssi.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
@@ -413,7 +413,7 @@ TARGET_BOARD_PLATFORM := sun
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/oplus
+    hardware/oplus_dodge
 
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -444,7 +444,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/android.hardware.telephony.mbms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.mbms.xml
 
-$(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
+$(call inherit-product, hardware/oplus_dodge/oplus-fwk/oplus-fwk.mk)
 endif
 
 PRODUCT_COPY_FILES += \
@@ -507,7 +507,7 @@ endif
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    hardware/oplus/vintf/device_framework_matrix.xml \
+    hardware/oplus_dodge/vintf/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix_aidl.xml
 DEVICE_MANIFEST_FILE := \
