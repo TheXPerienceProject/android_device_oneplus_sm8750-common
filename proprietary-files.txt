@@ -267,6 +267,13 @@ vendor/etc/init/qguard.rc
 vendor/etc/init/vendor.qti.hardware.display.color-service.rc
 vendor/etc/qguard.json
 
+# Dolby Vision
+odm/etc/dolby/display/dolby_vision.cfg
+odm/etc/dolby/dolby_vision.cfg
+odm/etc/media_codecs_dolby_vision.xml
+vendor/etc/dolby_vision.cfg
+vendor/persist/display/dolby_vision.cfg
+
 # dpAP Firmware
 vendor/firmware/dpAP_full.mbn
 vendor/firmware/dpAP_mini.mbn
