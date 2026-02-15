@@ -284,6 +284,13 @@ vendor/lib64/libPanelChaplin.so
 vendor/bin/ppd
 vendor/lib64/libdisp-aba.so
 
+# Dolby Vision
+odm/etc/dolby/display/dolby_vision.cfg
+odm/etc/dolby/dolby_vision.cfg
+odm/etc/media_codecs_dolby_vision.xml
+vendor/etc/dolby_vision.cfg
+vendor/persist/display/dolby_vision.cfg
+
 # dpAP Firmware
 vendor/firmware/dpAP_full.mbn
 vendor/firmware/dpAP_mini.mbn

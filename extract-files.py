@@ -21,7 +21,7 @@ namespace_imports = [
     'device/oneplus/sm8750-common',
     'hardware/qcom-caf/sm8750',
     'hardware/qcom-caf/wlan',
-    'hardware/oplus',
+    'hardware/oplus_dodge',
     'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/dataservices',
