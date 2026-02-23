@@ -184,3 +184,7 @@ service vendor.audioadsprpcd_audiopd /vendor/bin/audioadsprpcd audiopd adsp
     user media
     group media
     setenv ADSP_LIBRARY_PATH ";/system/lib/rfsa/adsp;/system/vendor/lib/rfsa/adsp;/dsp;/vendor/dsp;/odm/lib/rfsa/adsp;/vendor/lib/rfsa/adsp"
+
+on property:vendor.post_boot.parsed=1
+    # Enable ADFR features (only functions on supported devices)
+    write /sys/kernel/oplus_display/adfr_config 0x109f
