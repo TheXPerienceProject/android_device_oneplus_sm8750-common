@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 13 (CPH2653_16.0.7.201(EX01)).
+## are from OnePlus 13 (CPH2653_16.0.8.301(EX01)).
 
 # ACDBs
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_4.2_enpuv5.pmd
@@ -43,6 +43,7 @@ odm/etc/audio_algos_ver/OPSPT_Version.txt
 odm/etc/audio_algos_ver/OPSR_Version.txt
 odm/etc/audio_algos_ver/OPVE_Version.txt
 odm/etc/init/init.audio.rc
+odm/lib64/libSchedAssistExtImpl_vendor.so
 odm/lib64/libtfa98xx.so
 vendor/etc/models/acd/environment.eai
 vendor/etc/models/acd/event.eai
@@ -88,17 +89,7 @@ vendor/lib64/libaudioserviceexampleimpl.so;DISABLE_DEPS
 vendor/lib64/libbluetooth_audio_session_aidl.so:vendor/lib64/libbluetooth_audio_session_aidl_prebuilt.so;FIX_SONAME
 
 # Audio FX modules
-vendor/lib64/soundfx/libbundleaidl.so;DISABLE_DEPS
-vendor/lib64/soundfx/libdownmixaidl.so;DISABLE_DEPS
-vendor/lib64/soundfx/libdynamicsprocessingaidl.so;DISABLE_DEPS
-vendor/lib64/soundfx/libloudnessenhanceraidl.so;DISABLE_DEPS
-vendor/lib64/soundfx/libqcompostprocbundle.so;DISABLE_DEPS
-vendor/lib64/soundfx/libqcomvisualizer.so;DISABLE_DEPS
-vendor/lib64/soundfx/libqcomvoiceprocessing.so;DISABLE_DEPS
-vendor/lib64/soundfx/libquasar.so;DISABLE_DEPS
-vendor/lib64/soundfx/libreverbaidl.so;DISABLE_DEPS
-vendor/lib64/soundfx/libvisualizeraidl.so;DISABLE_DEPS
-vendor/lib64/soundfx/libvolumelistener.so;DISABLE_DEPS
+vendor/lib64/soundfx/libquasar.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@aidl-service-qti
@@ -188,8 +179,6 @@ vendor/lib64/libcwb_qcom_aidl.so
 vendor/lib64/libhdrvivid.so
 vendor/lib64/libhwcsensor.so
 vendor/lib64/libsdm-brightnessaware-parser.so
-vendor/lib64/vendor.oplus.hardware.cwb-V2-ndk.so
-vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
 
 # Display (HDR)
 vendor/lib64/libhdr_backlight_adapter.so
