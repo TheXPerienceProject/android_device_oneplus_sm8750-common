@@ -128,10 +128,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('libQnnSystem.so')
         .add_line_if_missing('libQnnHtpV79Stub.so')
         .add_line_if_missing('libQnnGpu.so')
-        .add_line_if_missing('libQnnHtpStub.so')
-        # libapsfixup.so is a /odm lib that libAlgoProcess now DT_NEEDEDs; the camera namespace
-        # can't resolve /odm libs by name, so expose it as a public library too.
-        .add_line_if_missing('libapsfixup.so'),
+        .add_line_if_missing('libQnnHtpStub.so'),
     'vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy': blob_fixup()
         .add_line_if_missing('sched_get_priority_min: 1')
         .add_line_if_missing('sched_get_priority_max: 1'),
