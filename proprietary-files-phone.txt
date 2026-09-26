@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 13 (CPH2653_16.0.8.301(EX01)).
+## are from OnePlus 13 (CPH2653_16.0.10.501(EX01)).
 
 # CNE
 vendor/app/CACertService/CACertService.apk
@@ -501,20 +501,12 @@ odm/bin/hw/android.hardware.secure_element-service.qti
 odm/etc/init/android.hardware.secure_element-service.qti.rc
 odm/etc/vintf/manifest/secure_element-service.xml
 odm/etc/vintf/manifest/secure_element_omapi_service.xml
-odm/etc/hal_uuid_map_config.xml:vendor/etc/hal_uuid_map_config.xml;SYMLINK=hal_uuid_map_23.xml,hal_uuid_map_29.xml,hal_uuid_map_31.xml;TRYSRCFIRST
+odm/etc/hal_uuid_map_config.xml:vendor/etc/hal_uuid_map_config.xml;SYMLINK=hal_uuid_map_7.xml,hal_uuid_map_23.xml,hal_uuid_map_29.xml,hal_uuid_map_31.xml;TRYSRCFIRST
 odm/lib64/libsecurity_event_olc_vnd.so
 vendor/lib64/hw/libEseUtils.so
 vendor/lib64/libGPMTEEC_vendor.so
 vendor/lib64/libGPQeSE.so
 vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libesesbprovision.so
-
-# Soter
-system_ext/app/SoterService/SoterService.apk
-vendor/bin/hw/vendor.qti.hardware.soter-service
-vendor/etc/init/vendor.qti.hardware.soter-service.rc
-vendor/etc/vintf/manifest/vendor.qti.hardware.soter-service.xml
-vendor/lib64/hw/vendor.qti.hardware.soter-impl.so
-vendor/lib64/vendor.qti.hardware.soter-V1-ndk.so
 
 # vi:ft=conf
