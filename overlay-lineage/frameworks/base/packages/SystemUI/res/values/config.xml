@@ -11,4 +11,13 @@
 
     <!-- Wattage support to show on custom charging animation-->
     <integer name="config_chargingWattageSupported">100</integer>
+
+    <!-- Actions shown in the advanced restart submenu. Devices may overlay this list. -->
+    <string-array name="config_restartActionsList" translatable="false">
+        <item>restart</item>
+        <item>restart_recovery</item>
+        <item>restart_bootloader</item>
+        <item>restart_fastboot</item>
+    </string-array>
+
 </resources>
