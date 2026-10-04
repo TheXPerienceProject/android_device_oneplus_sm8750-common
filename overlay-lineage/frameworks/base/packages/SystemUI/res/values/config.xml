@@ -9,4 +9,6 @@
     <!-- Whether key handler sends intent when changing slider position -->
     <string name="config_alertSliderIntent">org.lineageos.settings.device.UPDATE_SLIDER</string>
 
+    <!-- Wattage support to show on custom charging animation-->
+    <integer name="config_chargingWattageSupported">100</integer>
 </resources>
