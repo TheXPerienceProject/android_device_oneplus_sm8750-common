@@ -121,6 +121,8 @@ blob_fixups: blob_fixups_user_type = {
             r'            <Feature name="profile-and-level" value="256-1024" />\n'
             r'        </MediaCodec>'
         ),
+#        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video).*\n', '')
+#        .regex_replace('media_codecs_vendor_audio', 'media_codecs_dolby_vision'),
     # APS turbo fix: on the port, the camera app's classloader namespace cannot dlopen the /odm
     # ArcSoft/QNN helper libs (couple-HDR, turbo, QNN HTP), which gates the DSP/QNN path so turbo
     # can't run. Exposing them as vendor public libraries lets the app namespace resolve them.
