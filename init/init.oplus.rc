@@ -20,6 +20,9 @@ on post-fs-data
     # Multimedia feedback
     chown media media /proc/mm_fb
 
+    mkdir /data/vendor/persist 0770 system system
+    mkdir /data/vendor/persist/data 0700 system system
+
 on property:ro.boot.prjname=*
     # Display
     setprop ro.separate.soft ${ro.boot.prjname}
