@@ -89,6 +89,10 @@ BOARD_KERNEL_CMDLINE := \
     qcom_geni_serial.con_enabled=0 \
     sysctl.kernel.firmware_config.force_sysfs_fallback=1
 
+TARGET_KERNEL_CLANG_VERSION := 24
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_LLVM_BINUTILS := true
+TARGET_KERNEL_NO_GCC := false
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
